@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Momentum-Recap</title>
+</head>
+<body>
+    <div id="momentum">
+        <div id="clock">clock</div>
+        <div id="login">
+            <form id="login-form" class="hidden">
+                <input required type="text" placeholder="Enter your name">
+                <button>login</button>
+            </form>
+            <div id="login-greeting" class="hidden">
+                <span>Hello</span>
+                <span></span>
+                <span>Just Do It!</span>
+            </div>
+            <form id="login-reset" class="hidden">
+                <button onclick="onResetLogin()">reset</button>
+            </form>
+        </div>
+        <div id="todo">
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter">
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
