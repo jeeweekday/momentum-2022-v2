@@ -9,7 +9,11 @@
 </head>
 <body>
     <div id="momentum">
-        <div id="clock">clock</div>
+        <div id="clock">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div id="login">
             <form id="login-form" class="hidden">
                 <input required type="text" placeholder="Enter your name">
@@ -26,12 +30,14 @@
         </div>
         <div id="todo">
             <form id="todo-form">
-                <input type="text" placeholder="Write a To Do and Press Enter">
+                <input required type="text" placeholder="Write a To Do and Press Enter">
             </form>
             <ul id="todo-list"></ul>
         </div>
     </div>
 
     <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>
