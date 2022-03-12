@@ -9,9 +9,8 @@ body {
     align-items: center;
 }
 #momentum {
+    background-color: seagreen;
     position: relative;
-    border-top: 2px solid orange;
-    border-bottom: 2px solid orange;
     width: 60%;
     height: 50%;
 }
@@ -118,5 +117,70 @@ body {
 }
 /* TODO */
 #todo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+}
+#todo-form {
+    width: 100%;
+}
+#todo-form input {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+}
+#todo-form input::placeholder {
+    letter-spacing: 0px;
+    text-align: center;
+}
+#todo-list { 
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#todo-list li {
+    font-size: 25px;
+    /* line-height: 35px; */
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#todo-list li span:first-child {
+    background-color: yellowgreen;
+    font-weight: 600;
+}
+#todo-list li span:last-child {
+    font-size: 20px;
+}
+#todo-list li span:last-child:hover {
+    cursor: pointer;
+}
+@media screen and (max-width:640px) {
+    #todo-form input::placeholder {
+        letter-spacing: -1px;
+        text-align: center;
+    }
+}
+/* WEATHER */
+#weather-box {
+    border: 1px solid red;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+}
+#weather-box span {
     background-color: seagreen;
+    padding: 0 5px;
+}
+#weather-box span:first-child {
+    margin-right: -5px;
 }
