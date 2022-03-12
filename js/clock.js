@@ -7,9 +7,9 @@ function getTime(){
     //const가 아닌 let으로 선언하는것이 올바른가?
     const cHours = currentTime.getHours().toString().padStart(2,"0");
     clockHours.innerHTML = cHours;
-    const cMinutes = ":"+currentTime.getMinutes().toString().padStart(2,"0");
+    const cMinutes = currentTime.getMinutes().toString().padStart(2,"0");
     clockMinutes.innerHTML = cMinutes;
-    const cSeconds = ":"+currentTime.getSeconds().toString().padStart(2,"0");
+    const cSeconds = currentTime.getSeconds().toString().padStart(2,"0");
     clockSeconds.innerHTML = cSeconds;
 }
 

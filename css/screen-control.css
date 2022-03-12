@@ -1,0 +1,10 @@
+@media screen and (max-width:1024px) {
+    #momentum {
+        border: 2px solid black;
+    }
+}
+@media screen and (max-width:640px) {
+    #momentum {
+        border: 2px solid green;
+    }
+}
